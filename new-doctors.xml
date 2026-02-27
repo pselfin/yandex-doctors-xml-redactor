@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shop version="2.0" date="2024-12-10 08:06"> <!--Версия фида (обязательно "2.0") и дата обновления информации-->
+	<name>Яндекс.Здоровье</name> <!--Название площадки для отображения в карточке-->
+	<company>ООО Яндекс.Врачи</company> <!--Название организации-->
+	<url>https://doctors.example.ru/</url> <!--URL-адрес площадки-->
+	<picture>https://doctors.example.ru/static/600px.png</picture> <!--Логотип площадки-->
+	<email>info@example.ru</email>
+
+	<doctors>
+		<doctor id="doctor_1">
+			<internal_id>22461232315</internal_id> <!--Внутренний идентификатор доктора для записи-->
+			<name>Виноградов Александр Эдмондович</name> <!--ФИО врача-->
+			<description>Высококвалифицированный специалист - универсал со множеством специализаций!</description>
+			<first_name>Александр</first_name> <!--Имя-->
+			<surname>Виноградов</surname> <!--Фамилия-->
+			<patronymic>Эдмондович</patronymic> <!--Отчество-->
+			<experience_years>9</experience_years> <!--Сколько лет опыта-->
+			<career_start_date>2015-01-01</career_start_date> <!--Дата начала карьеры в формате ISO 8601-->
+			<degree>доктор наук</degree> <!--Кандидат / доктор наук.-->
+			<rank>Профессор</rank> <!--Профессор / доцент.-->
+			<category>Первая</category> <!--Первая / вторая / высшая-->
+			<education> <!--Информация об образовании. Можно указать несколько-->
+				<organization>Медицинский университет Реавиз</organization>
+				<finish_year>2015</finish_year> <!--Год выпуска-->
+				<type>Специалитет</type> <!--Профессор / доцент-->
+				<specialization>Лечебное дело (Лечебно-профилактическое дело)</specialization>
+			</education>
+			<job> <!--Информация об организации, в которой работал врач. Можно указать несколько-->
+				<organization>Центр детской неврологии и реабилитации "НейроСпектр"</organization>
+				<period_years>2015-2017</period_years> <!--Период работы в указанной организации. Например, 2007-2009 или 2009-н.в-->
+				<position>Нейропсихолог</position><!--Должность и специализация. Например, зав. отделением хирургии, врач-педиатр).-->
+			</job>
+			<certificate> <!--Информация о полученных сертификатах. Можно указать несколько-->
+				<organization>Московский институт психоанализа"</organization> <!--Название организации, которая выдала сертификат.-->
+				<finish_year>2020</finish_year> <!--Год получения-->
+				<name>Лечебная физкультура и спортивная медицина</name><!--Название сертификата-->
+			</certificate>
+			<reviews_total_count>100</reviews_total_count> <!--Общее число отзывов, доступных для прочтения по URL данного врача-->
+			<review> <!--Отзыв на врача. Можно указать несколько-->
+				<date>2024-12-07 09:00:24</date> <!--Дата отзыва в формате ISO 8601-->
+				<checked>true</checked> <!--Признак подтверждения записи к врачу и того, что отзыв прошел модерацию. Возможные значения: true или false (по умолчанию).-->
+				<used_in_rating>true</used_in_rating> <!--Признак того, что отзыв участвует в рейтинге для отображения карточки врача. Возможные значения: true или false (по умолчанию).-->
+				<author>Наталья</author> 
+				<author_id>natalia123</author_id>
+				<author_picture>https://doctors.example.ru/author.png</author_picture>
+				<url>https://doctors.example.ru/review1</url>
+				<comment>Долго ждать в регистратуре</comment>
+				<grade>4.5</grade>
+				<positive>Что-то, что понравилось</positive>
+				<negative>Что-то, что не понравилось</negative>
+				<response>Спасибо за отзыв!</response>
+			</review>
+		</doctor>
+	</doctors>
+
+	<clinics>
+		<clinic id="clinic_1">
+			<url>https://www.someclinic.ru</url> <!--Ссылка на сайт клиники-->
+			<picture>https://doctors.example.ru/images/Doctor/d9ed3.jpg</picture> <!--Ссылка на логотип клиники-->
+			<name>Клиника Яндекс Здоровье</name>
+			<city>г. Москва</city>
+			<address>ул. Льва Толстого 16</address>
+			<email>info@someclinic.ru</email>
+			<phone>+79999999999</phone> <!--телефон для записи. Можно указать несколько-->
+			<internal_id>123</internal_id> <!--Внутренний идентификатор клиники для записи-->
+	        <company_id>1032739194</company_id> <!--Идентификатор организации в Яндексе. Можно посмотреть в Яндекс.Бизнес или на Яндекс картах ссылки вида https://yandex.ru/profile/1032739194-->
+		</clinic>
+	</clinics>
+
+	<services>
+		<service id="service_1">
+			<name>Первичный приём</name>  <!--Произвольное название услуги-->
+			<gov_id>A01.07.001</gov_id> <!-- Идентификатор услуги из перечня минздрава РФ https://docs.cntd.ru/document/542609980 -->
+			<description>Первичный приём стоматолога-хирурга, диагностика возможности и степени хирургического вмешательства</description>
+			<internal_id>123</internal_id> <!--Внутренний идентификатор услуги для записи-->
+		</service>
+		<service id="service_2">
+			<name>Мрт головного мозга</name>
+			<gov_id>A05.23.009.001</gov_id>
+			<description>Магнитная томография мозга</description>
+			<internal_id>345</internal_id>
+		</service>
+	</services>
+
+	<offers>
+		<offer id="offer_1">
+			<url>https://doctors.example.ru/dr/vinogradov-aleksandr-edmondovich/</url> <!--Ссылка на услугу врача в клинике или привязанную к оборудованию в клинике. Если разделение на услуги не поддерживается на сайте. Должна быть хотя бы один url в паре врач+клиника или оборудование+клиника-->
+
+			<oms>true</oms>	<!--Возможность записи по омс true или false (по умолчанию - false)-->
+			<online_schedule>true</online_schedule> <!--Есть онлайн расписание. true или false (по умолчанию - false). Смотри api онлайн расписания. Требует наличия internal_id у доктора, клиники и услуги-->
+			<appointment>true</appointment> <!--Возможность записаться на прием через сайт-поставщик файла. Возможные значения: true или false (по умолчанию - false).-->
+
+			<price> <!--Цена приёма. Может отсутствовать, если неизвестна-->
+				<base_price>5200</base_price> <!--Цена без скидкок-->
+				<currency>RUB</currency>	<!--Валюта оплаты. Используйте трехбуквенный код валюты по ISO 4217-->
+				<discount name="Клубная карта">4000</discount> <!--Скидка. значение не должно быть больше, чем base_price. Можно указать несколько-->
+				<free_appointment>При условии дальнейшего лечения</free_appointment> <!--Условие бесплатного приёма. Можно указать несколько-->
+			</price>
+
+			<service id="service_1"/> <!--Идентификатор услуги в фиде (список <services>)-->
+
+			<clinic id="clinic_1">  <!--Идентификатор клиники в фиде (список <clinics>)-->
+				<doctor id="doctor_1"> <!--Идентификатор доктора в фиде (список <doctors>)-->
+					<speciality>стоматолог-хирург</speciality> <!--Специальность доктора, по которой он оказывает данную услугу. Должна совпадать со списком в справке (подготовим)-->
+					<children_appointment>true</children_appointment> <!--Прием детей (до 18 лет). Возможные значения: true или false (по умолчанию - false)-->
+					<adult_appointment>true</adult_appointment> <!--Прием взрослых (от 18 лет). Возможные значения: true или false (по умолчанию - true)-->
+					<house_call>true</house_call> <!--Возможность вызова врача на дом. Возможные значения: true или false (по умолчанию - false).-->
+					<telemed>true</telemed> <!--Возможность приема по видеосвязи (телемедицина). Возможные значения: true или false (по умолчанию - false).-->
+					<is_base_service>true</is_base_service> <!--Услуга является базовой для этого врача, этой специальности в этой клинике. Обычно это первичный приём врача. Только одна услуга может быть базовой для связки врач+клиника+специальность. По умолчанию - false-->
+				</doctor>
+			</clinic>
+		</offer>
+
+		<offer id="offer_2">
+			<!--Пример оффера, где можно записаться к врачу только по телефону-->
+
+			<url>https://doctors.example.ru/dr/vinogradov-aleksandr-edmondovich</url>
+			<price> 
+				<base_price>5200</base_price>
+				<currency>RUB</currency>
+			</price>
+			<service id="service_1"/>
+			<clinic id="clinic_1">
+				<doctor id="doctor_1">
+					<speciality>стоматолог-хирург</speciality> 
+					<is_base_service>true</is_base_service>
+				</doctor>
+			</clinic>
+		</offer>
+	</offers>
+</shop>

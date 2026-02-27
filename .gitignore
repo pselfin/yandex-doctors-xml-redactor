@@ -1,0 +1,24 @@
+# Данные проектов — содержат реальные медицинские данные клиник
+data/*.sqlite
+
+# Служебные файлы авторизации (сброс пароля, rate limiting)
+data/.reset
+data/.rl
+
+# Конфиг с хешем пароля — не хранить в репозитории
+# Скопируйте config.example.php → config.php и настройте
+config.php
+
+# Системные файлы macOS и Windows
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Явно отслеживаем нужные файлы внутри data/
+!data/.gitkeep
+!data/.htaccess
