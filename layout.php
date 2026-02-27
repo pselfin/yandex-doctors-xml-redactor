@@ -8,7 +8,9 @@ function layoutHead(string $title, string $project = ''): void {
 <title>' . htmlspecialchars($title, ENT_QUOTES, 'UTF-8') . ' — XML Редактор Яндекс Врачи</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 <style>
-body{padding-top:56px}
+html,body{height:100%}
+body{padding-top:56px;display:flex;flex-direction:column;min-height:100vh}
+.container-fluid{flex:1}
 .sidebar{min-height:calc(100vh - 56px);background:#f8f9fa;border-right:1px solid #dee2e6}
 .nav-section{font-size:.75rem;text-transform:uppercase;color:#6c757d;padding:.5rem 1rem;margin-top:.5rem}
 </style>
@@ -58,6 +60,9 @@ function layoutContent(string $project = ''): void {
 
 function layoutFoot(): void {
     echo '</div></div></div>
+<footer class="text-center text-muted py-3 border-top mt-4" style="font-size:.8rem">
+  Разработано: <a href="https://selfin.pro/" target="_blank" rel="noopener" class="text-muted">Selfin.pro</a> — разработка и продвижение сайтов
+</footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js" defer></script>
 </body></html>';
